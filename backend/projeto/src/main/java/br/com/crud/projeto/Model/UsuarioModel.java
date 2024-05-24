@@ -6,23 +6,25 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import lombok.Getter;
+import lombok.Setter;
 
 @Entity
 @Table(name="usuarios")
 public class UsuarioModel {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long userID;
+    @Getter @Setter private long userID;
 
     @Column(name = "nome")
-    private String nome;
+    @Getter @Setter private String nome;
 
     @Column(name = "senha")
-    private String senha;
+    @Getter @Setter private String senha;
 
     @Column(name = "cpf")
-    private String cpf;
+    @Getter @Setter private String cpf;
 
     @Column(name = "dataDeNascimento")
-    private String dataDeNascimento;
+    @Getter @Setter private String dataDeNascimento;
 }
