@@ -25,6 +25,6 @@ public class UsuarioModel {
     @Column(name = "cpf")
     @Getter @Setter private String cpf;
 
-    @Column(name = "dataDeNascimento")
-    @Getter @Setter private String dataDeNascimento;
+    @Column(name = "dataNascimento")
+    @Getter @Setter private String dataNascimento;
 }
